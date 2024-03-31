@@ -1,13 +1,12 @@
 spring:
   datasource:
     url: jdbc:h2:mem:testdb
+  main:
+    allow-circular-references: true
   sql:
     init:
       mode: always
       data-locations: data.sql
-
-  main:
-    allow-circular-references: true
   jpa:
     generate-ddl: false
     hibernate:
@@ -15,10 +14,6 @@ spring:
 
     properties:
       hibernate:
-        format_sql: none
+        format_sql: true
 
     show-sql: true
-
-logging:
-  level:
-    ROOT: INFO

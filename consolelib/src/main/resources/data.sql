@@ -1,0 +1,4 @@
+insert into author(id,fullname) values (1,'Snegov Sergey'),(2,'Lakshtovsky Ivan'),(3,'Omer Mike');
+insert into genre(id,genrename) values (1,'Fantastic'),(2,'Thriller'),(3,'Fantasy');
+insert into book (id,title, AUTHORID, GENREID) values (1,'People like gods', 1, 1),(2,'Valiant Deed', 2, 1),(3,'Inside the killer', 3, 2);
+insert into comment(id,commenttext,BOOKID) values (1,'This was my favorite book of the year by far.People like gods was impossible to put down.I wish I could read it again for the first time.People like gods was excellent, a real page-turner',1),(2,'I was blown away by the author’s ability to write such phenomenal scenes. I would recommend Valiant Deed to anyone. Read it! I promise, you’ll be hooked', 2),(3,'waste of time', 3),(4,'not so bad', 3),(5,'that is ok', 3);
